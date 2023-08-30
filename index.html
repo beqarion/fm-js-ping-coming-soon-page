@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/tailwind.css"
+    />
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <!-- <header + main> + footer container -->
+    <div
+      class="min-h-screen font-sans pt-[81px] md:pt-[80px] pr-[27px] pb-[37px] md:px-0 md:pb-[49px] pl-[28px] max-w-[500px] mx-auto md:max-w-[640px] flex flex-col"
+    >
+      <!-- header + main container -->
+      <div class="grow">
+        <header class="space-y-8 md:space-y-10">
+          <!-- logo -->
+          <div>
+            <img
+              class="mx-auto w-14 h-6 object-contain md:w-[90px] md:h-[39px]"
+              src="./images/logo.svg"
+              alt=""
+            />
+          </div>
+          <!-- text -->
+          <div class="text-center space-y-[15px] md:space-y-4">
+            <h1
+              class="text-neutral-gray text-[22px] font-light md:text-5xl leading-4"
+            >
+              We are launching
+              <span class="font-bold text-neutral-veryDarkBlue">soon!</span>
+            </h1>
+            <p
+              class="text-neutral-veryDarkBlue text-[12px] md:text-[20px] font-light"
+            >
+              Subscribe and get notified
+            </p>
+          </div>
+          <!-- CTA form -->
+          <form
+            id="form"
+            action=""
+            class="px-[19px] space-y-[10px] md:px-[1.5px] md:space-y-0 md:h-14 md:flex gap-4"
+          >
+            <div class="relative md:grow md:h-full">
+              <input
+                id="input"
+                class="w-full h-10 border-secondary-paleBlue border-[1px] rounded-[28px] px-8 py-[10px] outline-none font-light text-[12px] leading-5 text-neutral-veryDarkBlue md:h-full md:py-[18px] md:px-[30px] md:text-base placeholder-secondary-paleBlue"
+                type="email"
+                placeholder="Your email address…"
+              />
+              <p
+                id="error-text"
+                class="hidden tracking-[0.125px] leading-[20px] italic absolute bottom-0 left-1/2 -translate-x-[50%] translate-y-[calc(100%+2px)] md:left-[30px] md:-translate-x-0 md:translate-y-[calc(100%+6px)] text-[10px] md:text-[12px] text-secondary-lightRed text-center min-w-max"
+              >
+                Please provide a valid email address
+              </p>
+            </div>
+            <button
+              id="button"
+              class="md:basis-[200px] w-full h-10 py-3 bg-primary-blue rounded-[28px] text-white font-semibold text-[12px] leading-4 md:h-full md:py-[18px] md:text-base shadow-btn-shadow md:hover:bg-secondary-paleBlue transition grid place-content-center md:hover:shadow-none"
+            >
+              Notify Me
+            </button>
+          </form>
+        </header>
+        <!-- main -->
+        <main class="mt-[72px] md:mt-[94px]">
+          <div class="md:w-[640px] md:h-[383px]">
+            <img
+              class="md:w-full md:h-full object-cover"
+              src="./images/illustration-dashboard.png"
+              alt=""
+            />
+          </div>
+        </main>
+      </div>
+      <!-- footer -->
+      <footer class="mt-[120px] md:mt-[72px] space-y-[27px] md:space-y-[25px]">
+        <!-- socials container -->
+        <div class="flex w-[120px] mx-auto justify-between">
+          <div
+            class="grid place-items-center w-[31px] h-[31px] text-primary-blue rounded-full border-secondary-paleBlue border-[1px] hover:cursor-pointer md:hover:bg-primary-blue md:hover:text-white md:hover:border-0 md:transition"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div
+            class="grid place-items-center w-[31px] h-[31px] text-primary-blue rounded-full border-secondary-paleBlue border-[1px] hover:cursor-pointer md:hover:bg-primary-blue md:hover:text-white md:hover:border-0 md:transition"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div
+            class="grid place-items-center w-[31px] h-[31px] text-primary-blue rounded-full border-secondary-paleBlue border-[1px] hover:cursor-pointer md:hover:bg-primary-blue md:hover:text-white md:hover:border-0 md:transition"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        <!-- copyright -->
+        <p
+          class="text-center text-neutral-gray text-[10px] md:text-[12px] font-light"
+        >
+          &copy; Copyright Ping. All rights reserved.
+        </p>
+      </footer>
+    </div>
+    <script
+      type="module"
+      src="./js/script.js"
+    ></script>
+  </body>
+</html>
