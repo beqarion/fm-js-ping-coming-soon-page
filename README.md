@@ -34,9 +34,9 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://github.com/beqarion/3-column-preview-card-component)
+- [Solution](https://github.com/beqarion/fm-js-ping-coming-soon-page)
 
-- [Live Site](https://beqarion.github.io/3-column-preview-card-component/)
+- [Live Site](https://ping-single-column-coming-soon.netlify.app/)
 
 ## My process
 
@@ -46,11 +46,7 @@ Users should be able to:
 
 - Vanilla JS
 
-- CSS custom properties
-
-- Flexbox
-
-- CSS Grid
+- Tailwind CSS
 
 - Mobile-first workflow
 
